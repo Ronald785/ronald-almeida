@@ -1,26 +1,71 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --background: #ffffff;
+    --foreground: #171717;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    :root {
+        --background: linear-gradient(
+            90deg,
+            rgba(3, 7, 18, 0.95) 0%,
+            rgba(17, 17, 22, 0.95) 35%,
+            rgba(6, 5, 5, 0.95) 100%
+        );
+        --foreground: #ededed;
+    }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.shadow-custom {
+    box-shadow: rgb(2, 6, 23) 0px 10px 30px 1px;
+}
+
+h1 {
+    /* background: linear-gradient(
+        to bottom,
+        rgb(101, 143, 233) 0%,
+        rgb(139, 137, 216) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+
+    color: rgb(132, 133, 246);
+    text-transform: uppercase;
+    background: linear-gradient(90deg, rgb(148, 66, 254), rgb(51, 120, 255))
+        text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-1 {
+    /* background-image: linear-gradient(
+        to right bottom,
+        rgba(18, 3, 131, 0.65),
+        rgba(61, 7, 158, 0.65),
+        rgba(97, 12, 184, 0.65),
+        rgba(132, 16, 210, 0.65),
+        rgba(169, 18, 235, 0.65)
+    );
+
+    background-image: url("/assets/images/bg-purple.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+section {
+    background-image: url("/assets/images/stars.svg");
 }
