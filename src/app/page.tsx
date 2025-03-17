@@ -7,7 +7,7 @@ export default function Page() {
         <>
             <Home />
             {/* <Nav /> */}
-            {/* <Skills /> */}
+            <Skills />
         </>
     );
 }
