@@ -5,14 +5,16 @@ import { MdOutlineEmail } from "react-icons/md";
 
 export default function Home() {
     return (
-        <section className="h-screen bg-1 grid grid-cols-2 gap-1 stars">
-            <div className="flex flex-col justify-center w-md m-auto ">
-                <h1 className="text-4xl font-extrabold">Ronald Almeida</h1>
-                <h3 className="text-2xl mt-4">Full stack developer</h3>
-                <p className="mt-4">
+        <section className="max-w-7xl m-auto bg-1 grid grid-cols-1 md:grid-cols-2 gap-1 stars p-4 sm:mb-32">
+            <div className="flex flex-col justify-center items-center md:items-start">
+                <h1 className="text-3xl md:text-4xl font-extrabold">
+                    Ronald Almeida
+                </h1>
+                <h3 className="text-2xl mt-4">Desenvolvedor Full Stack</h3>
+                <p className="mt-4 text-center md:text-start">
                     Criando sonhos com as tecnologias mais modernas.
-                    Especializando em construir aplicações usando React,
-                    node.js, TypeScript e Javascript.
+                    Especializado em construir sistemas, sites e aplicativos
+                    usando React, Node.js, TypeScript e Javascript.
                 </p>
                 <div className="mt-4 flex gap-3">
                     <Link href={"https://github.com/Ronald785"} target="_blank">
