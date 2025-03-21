@@ -48,7 +48,8 @@
     box-shadow: rgb(2, 6, 23) 0px 10px 30px 1px;
 }
 
-h1 {
+h1,
+.title {
     /* background: linear-gradient(
         to bottom,
         rgb(101, 143, 233) 0%,
