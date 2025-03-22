@@ -7,7 +7,7 @@ export default function Home() {
     return (
         <section
             id="home"
-            className="pt-28 max-w-7xl m-auto bg-1 grid grid-cols-1 md:grid-cols-2 gap-1 stars p-4 sm:mb-32 sm:mt-32"
+            className="mt-24 max-w-7xl m-auto bg-1 grid grid-cols-1 md:grid-cols-2 gap-1 stars p-4"
         >
             <div className="flex flex-col justify-center items-center md:items-start">
                 <h1 className="text-3xl md:text-4xl font-extrabold">

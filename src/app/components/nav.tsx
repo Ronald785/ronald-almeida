@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Nav() {
     return (
-        <section className="fixed w-full top-0 backdrop-blur-xl shadow-custom">
+        <section className="fixed w-full top-0 backdrop-blur-xl shadow-custom z-1">
             <div className="max-w-7xl m-auto p-4 h-24 flex justify-between text-center text-lg">
                 <ul className="flex justify-center items-center">
                     <li className="cursor-pointer title">

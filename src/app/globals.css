@@ -44,6 +44,11 @@
     --radius-xl: calc(var(--radius) + 4px);
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
 .shadow-custom {
     box-shadow: rgb(2, 6, 23) 0px 10px 30px 1px;
 }
