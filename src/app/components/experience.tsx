@@ -25,7 +25,7 @@ export default function Experience() {
                         </div>
                     </div>
 
-                    <ul className="mt-4 list-disc list-inside space-y-2 text-gray-300">
+                    <ul className="mt-4 list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
                         <li>
                             Desenvolvimento e manutenção de APIs escaláveis com
                             Node.js e Express.
@@ -65,7 +65,7 @@ export default function Experience() {
                         </div>
                     </div>
 
-                    <ul className="mt-4 list-disc list-inside space-y-2 text-gray-300">
+                    <ul className="mt-4 list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
                         <li>Desenvolvimento de APIs RESTful.</li>
                         <li>Manutenção e escalabilidade de microsserviços.</li>
                         <li>Criação de interfaces otimizadas.</li>
@@ -100,7 +100,7 @@ export default function Experience() {
                         </div>
                     </div>
 
-                    <ul className="mt-4 list-disc list-inside space-y-2 text-gray-300">
+                    <ul className="mt-4 list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
                         <li>
                             Desenvolvimento de protótipos de UI com HTML, CSS e
                             JavaScript.

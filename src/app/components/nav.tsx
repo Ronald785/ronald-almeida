@@ -1,9 +1,10 @@
 import Link from "next/link";
+import { IoMenu } from "react-icons/io5";
 
 export default function Nav() {
     return (
         <section className="fixed w-full top-0 backdrop-blur-xl shadow-custom z-1">
-            <div className="max-w-7xl m-auto p-4 h-24 flex justify-between text-center text-lg">
+            <div className="max-w-7xl m-auto p-4 h-24 flex justify-between items-center text-center text-lg">
                 <ul className="flex justify-center items-center">
                     <li className="cursor-pointer title">
                         <Link href={"#home"} className="font-extrabold">
@@ -11,7 +12,7 @@ export default function Nav() {
                         </Link>
                     </li>
                 </ul>
-                <ul className="flex items-center">
+                <ul className="hidden md:flex items-center">
                     <li className="cursor-pointer mr-4">
                         <Link href={"#about"} className="font-bold">
                             Sobre
@@ -38,6 +39,7 @@ export default function Nav() {
                         </Link>
                     </li>
                 </ul>
+                <IoMenu size={30} className="md:hidden cursor-pointer" />
             </div>
         </section>
     );

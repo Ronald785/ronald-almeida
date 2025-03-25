@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FaLinkedinIn } from "react-icons/fa";
 import { LuGithub } from "react-icons/lu";
-import { MdOutlineEmail } from "react-icons/md";
+import { TbFileCv } from "react-icons/tb";
 
 export default function Home() {
     return (
@@ -21,18 +21,27 @@ export default function Home() {
                 </p>
                 <div className="mt-4 flex gap-3">
                     <Link href={"https://github.com/Ronald785"} target="_blank">
-                        <div className="bg-gray-800 rounded-full w-11 h-11 flex justify-center items-center">
-                            <LuGithub size={25} color="white" />
+                        <div className="border-2 border-chart-4 rounded-lg p-2 opacity-80 hover:opacity-90 flex justify-center items-center">
+                            <TbFileCv
+                                size={20}
+                                className="text-black dark:text-white"
+                            />
                         </div>
                     </Link>
                     <Link href={"https://github.com/Ronald785"} target="_blank">
-                        <div className="bg-gray-800 rounded-full w-11 h-11 flex justify-center items-center">
-                            <FaLinkedinIn size={20} color="white" />
+                        <div className="border-2 border-chart-4 rounded-lg p-2 opacity-80 hover:opacity-90 flex justify-center items-center">
+                            <FaLinkedinIn
+                                size={20}
+                                className="text-black dark:text-white"
+                            />
                         </div>
                     </Link>
                     <Link href={"https://github.com/Ronald785"} target="_blank">
-                        <div className="bg-gray-800 rounded-full w-11 h-11 flex justify-center items-center">
-                            <MdOutlineEmail size={25} color="white" />
+                        <div className="border-2 border-chart-4 rounded-lg p-2 opacity-80 hover:opacity-90 flex justify-center items-center">
+                            <LuGithub
+                                size={20}
+                                className="text-black dark:text-white"
+                            />
                         </div>
                     </Link>
                 </div>

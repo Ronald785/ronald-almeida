@@ -111,7 +111,7 @@ export default function Skills() {
                 {visibleSkills.map((skill, index) => (
                     <div
                         key={index}
-                        className="flex flex-col justify-baseline p-8 pb-2 border border-gray-800 dark:border-purple-600 rounded-2xl"
+                        className="flex flex-col justify-baseline p-6 pb-2 border border-gray-800 dark:border-purple-600 rounded-2xl"
                     >
                         <div className="flex items-center gap-4">
                             <div className="rounded-full p-3 border border-gray-500">
@@ -136,7 +136,7 @@ export default function Skills() {
             <div className="text-center mt-6">
                 <button
                     onClick={() => setShowAll(!showAll)}
-                    className="px-6 py-2 bg-chart-4 text-white rounded-lg opacity-90 hover:opacity-100 transition cursor-pointer"
+                    className="px-6 py-2 bg-chart-4 text-white rounded-lg hover:opacity-90 transition cursor-pointer"
                 >
                     {showAll ? "Ver menos" : "Ver mais"}
                 </button>

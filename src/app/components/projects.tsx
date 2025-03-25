@@ -24,7 +24,7 @@ const projects = [
     },
     {
         title: "DevBlog",
-        description: "Meu Blog",
+        description: "Meu Blog pessoal sobre as tecnologia do mercado",
         image: "/assets/images/portfolio/podcastr.png",
         technologies: ["React", "Next", "Typescript", "Styled-components"],
     },
@@ -79,18 +79,15 @@ export default function Projects() {
     return (
         <section id="projects" className="max-w-7xl m-auto p-4">
             <h2 className="text-center text-3xl mb-8">Projetos</h2>
-            <h3 className="text-center text-lg mb-8">
-                Alguns dos meus projetos pessoais
-            </h3>
             <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
                 {technologies.map((tech, index) => (
                     <button
                         key={index}
                         onClick={() => toggleTechnology(tech)}
-                        className={`rounded-lg pt-1 pb-1 pl-2 pr-2 cursor-pointer transition-all ${
+                        className={`rounded-sm text-sm pt-1 pb-1 pl-2 pr-2 cursor-pointer transition-all ${
                             selectedTechnologies.includes(tech)
-                                ? "bg-purple-800"
-                                : "bg-gray-800"
+                                ? "bg-chart-4"
+                                : "bg-sidebar-accent"
                         }`}
                     >
                         {tech}
@@ -101,17 +98,17 @@ export default function Projects() {
                 {filteredProjects.map((project, index) => (
                     <div
                         key={index}
-                        className="rounded-lg border border-accent"
+                        className="rounded-lg border-2 border-accent overflow-hidden"
                     >
-                        <div className="relative h-40 w-full">
+                        <div className="relative h-36 w-full">
                             <Image
                                 fill={true}
                                 src={project.image}
                                 alt={`Image ${project.title} Webpage`}
-                                className="object-cover rounded-t-lg"
+                                className="object-cover"
                             />
                         </div>
-                        <div className="pr-8 pl-8 pt-4 pb-4">
+                        <div className="pr-4 pl-4 pt-4 pb-4">
                             <h4 className="font-bold text-lg">
                                 {project.title}
                             </h4>
@@ -120,7 +117,7 @@ export default function Projects() {
                                 {project.technologies.map((tech, techIndex) => (
                                     <span
                                         key={techIndex}
-                                        className="bg-gray-800 rounded-lg pt-1 pb-1 pl-2 pr-2"
+                                        className="text-xs bg-sidebar-accent rounded-sm pt-1 pb-1 pl-2 pr-2"
                                     >
                                         {tech}
                                     </span>
