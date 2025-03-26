@@ -2,44 +2,52 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import Link from "next/link";
 
 const projects = [
     {
         title: "Trancista Mariana",
-        description: "Uma landing page responsiva construída em Next.js",
-        image: "/assets/images/portfolio/trancista.png",
-        technologies: ["React", "Next"],
-    },
-    {
-        title: "Happy",
-        description: "Encontre o centro de doação mais próximo de você",
-        image: "/assets/images/portfolio/happy.png",
-        technologies: ["React", "Next"],
-    },
-    {
-        title: "Podcastr",
-        description: "Seu próprio podcast na palma da sua mão",
-        image: "/assets/images/portfolio/podcastr.png",
-        technologies: ["React", "Next"],
-    },
-    {
-        title: "DevBlog",
-        description: "Meu Blog pessoal sobre as tecnologia do mercado",
-        image: "/assets/images/portfolio/podcastr.png",
-        technologies: ["React", "Next", "Typescript", "Styled-components"],
-    },
-    {
-        title: "TechVision",
         description:
-            "TechVision, uma empresa inovadora no setor de tecnologia e desenvolvimento web.",
-        image: "/assets/images/portfolio/podcastr.png",
-        technologies: ["HTML", "CSS"],
+            "Especialista em tranças nagô e box braids, com mais de 5 anos de experiência. Transformando cabelos em arte.",
+        image: "/assets/images/portfolio/trancista.png",
+        technologies: ["React", "Next", "Typescript"],
+        link: "https://trancistacampinas-mariana.com.br",
     },
     {
-        title: "Podcastr",
-        description: "Seu próprio podcast na palma da sua mão",
-        image: "/assets/images/portfolio/podcastr.png",
+        title: "vox2Text API",
+        description:
+            "Transforme áudio em texto com uma API extremamente rápida e de fácil configuração.",
+        image: "/assets/images/portfolio/vox2text-api.png",
+        technologies: ["Node", "Javascript", "Openai"],
+        link: "https://github.com/Ronald785/vox2text-api",
+    },
+    {
+        title: "CetSales",
+        description:
+            "Uma empresa de consultoria e treinamento focada em estratégias de vendas para impulsionar os lucros.",
+        image: "/assets/images/portfolio/cet-sales.png",
+        technologies: ["HTML", "Javascript", "Bootstrap"],
+    },
+    {
+        title: "Kindmap",
+        description:
+            "Ajudando a encontrar o centro de doação mais próximo em um país com 8,7 milhões de passando fome.",
+        image: "/assets/images/portfolio/kindmap.png",
+        technologies: ["React", "Next", "OpenLayers"],
+    },
+    {
+        title: "Next Tech Blog",
+        description:
+            "Meu blog pessoal com dicas de código, novidades em tecnologia, automações e inovações em IA..",
+        image: "/assets/images/portfolio/next-tech-blog.png",
         technologies: ["React", "Next"],
+    },
+    {
+        title: "Landing page",
+        description: "Uma página  web para converter visitantes em cliente",
+        image: "/assets/images/portfolio/landing-page.png",
+        technologies: ["HTML", "CSS"],
+        link: "https://ronald785-landingpage.netlify.app",
     },
 ];
 
@@ -50,8 +58,6 @@ const technologies = [
     "Javascript",
     "HTML",
     "Bootstrap",
-    "Styled-components",
-    "Redux",
 ];
 
 export default function Projects() {
@@ -101,12 +107,23 @@ export default function Projects() {
                         className="rounded-lg border-2 border-accent overflow-hidden"
                     >
                         <div className="relative h-36 w-full">
-                            <Image
-                                fill={true}
-                                src={project.image}
-                                alt={`Image ${project.title} Webpage`}
-                                className="object-cover"
-                            />
+                            {project.link ? (
+                                <Link href={project.link} target="_blank">
+                                    <Image
+                                        fill={true}
+                                        src={project.image}
+                                        alt={`Image ${project.title} Webpage`}
+                                        className="object-cover"
+                                    />
+                                </Link>
+                            ) : (
+                                <Image
+                                    fill={true}
+                                    src={project.image}
+                                    alt={`Image ${project.title} Webpage`}
+                                    className="object-cover"
+                                />
+                            )}
                         </div>
                         <div className="pr-4 pl-4 pt-4 pb-4">
                             <h4 className="font-bold text-lg">
