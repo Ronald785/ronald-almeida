@@ -72,7 +72,7 @@ const skills = [
     },
     {
         title: "APIs",
-        icon: <GoCpu size={25} color="white" />,
+        icon: <GoCpu size={25} className="fill-blue-800" />,
         description: "REST, GraphQL",
         details:
             "Projetando e implementando APIs eficientes para uma comunicação de dados fluida.",
@@ -111,7 +111,7 @@ export default function Skills() {
                 {visibleSkills.map((skill, index) => (
                     <div
                         key={index}
-                        className="flex flex-col justify-baseline p-6 pb-2 border border-gray-800 dark:border-purple-600 rounded-2xl"
+                        className="flex flex-col justify-baseline p-6 pb-2 border-2 border-accent dark:border dark:border-purple-600 rounded-2xl"
                     >
                         <div className="flex items-center gap-4">
                             <div className="rounded-full p-3 border border-gray-500">

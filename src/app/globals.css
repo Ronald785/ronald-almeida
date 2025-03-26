@@ -50,7 +50,7 @@ html {
 }
 
 .shadow-custom {
-    box-shadow: rgb(2, 6, 23) 0px 10px 30px 1px;
+    box-shadow: rgb(2, 6, 23) 0px var(--chart-4) 30px -5px;
 }
 
 h1,
@@ -104,7 +104,7 @@ section {
     --secondary-foreground: oklch(0.21 0.034 264.665);
     --muted: oklch(0.967 0.003 264.542);
     --muted-foreground: oklch(0.551 0.027 264.364);
-    --accent: oklch(0.967 0.003 264.542);
+    --accent: oklch(0.87 0 0);
     --accent-foreground: oklch(0.21 0.034 264.665);
     --destructive: oklch(0.577 0.245 27.325);
     --border: oklch(0.928 0.006 264.531);
