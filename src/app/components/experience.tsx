@@ -9,11 +9,11 @@ export default function Experience() {
                 <div className="p-6 rounded-lg shadow-lg border-2 border-purple-600">
                     <div className="flex gap-6">
                         <Image
-                            src={"/assets/images/logos/era.png"}
+                            src={"/assets/images/logos/era.svg"}
                             width={50}
                             height={50}
                             alt="Era"
-                            className="rounded-lg"
+                            className="rounded-lg bg-[#2b363d] w-[50px] h-[50px]"
                         />
                         <div>
                             <h3 className="text-xl font-semibold">

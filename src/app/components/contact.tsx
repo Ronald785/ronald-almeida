@@ -62,24 +62,32 @@ export default function Contact() {
                         <h3 className="text-2xl mb-4">Vamos nos conectar</h3>
                         <div className="grid gap-4">
                             <Link
-                                href={"mailto:ronalmateus785@gmail.com"}
+                                href={"mailto:ronaldmateus785@gmail.com"}
                                 target="_blank"
+                                aria-label="Enviar email para ronaldmateus785@gmail.com"
                             >
                                 <div className="flex items-center gap-4 border border-chart-4 p-2 pl-4 rounded-lg">
-                                    <MdOutlineEmail size={25} />
+                                    <MdOutlineEmail
+                                        size={25}
+                                        aria-hidden="true"
+                                    />
                                     <div className="h-8 w-0.5 rounded-lg bg-chart-4"></div>
                                     <div>
                                         <p>Email</p>
-                                        <p>ronalmateus785@gmail.com</p>
+                                        <p>ronaldmateus785@gmail.com</p>
                                     </div>
                                 </div>
                             </Link>
                             <Link
                                 href={"https://www.linkedin.com/in/ronald785/"}
                                 target="_blank"
+                                aria-label="Perfil no LinkedIn de Ronald Almeida"
                             >
                                 <div className="flex items-center gap-4 border border-chart-4 p-2 pl-4 rounded-lg">
-                                    <FaLinkedinIn size={25} />
+                                    <FaLinkedinIn
+                                        size={25}
+                                        aria-hidden="true"
+                                    />
                                     <div className="h-8 w-0.5 rounded-lg bg-chart-4"></div>
                                     <div>
                                         <p>Linkedin</p>
@@ -90,9 +98,10 @@ export default function Contact() {
                             <Link
                                 href={"https://github.com/Ronald785"}
                                 target="_blank"
+                                aria-label="Perfil no GitHub de Ronald Almeida"
                             >
                                 <div className="flex items-center gap-4 border border-chart-4 p-2 pl-4 rounded-lg">
-                                    <FiGithub size={25} />
+                                    <FiGithub size={25} aria-hidden="true" />
                                     <div className="h-8 w-0.5 rounded-lg bg-chart-4"></div>
                                     <div>
                                         <p>GitHub</p>
@@ -102,7 +111,7 @@ export default function Contact() {
                             </Link>
 
                             <div className="flex items-center gap-4 border border-chart-4 p-2 pl-4 rounded-lg">
-                                <MdLocationOn size={25} />
+                                <MdLocationOn size={25} aria-hidden="true" />
                                 <div className="h-8 w-0.5 rounded-lg bg-chart-4"></div>
                                 <div>
                                     <p>Localização</p>

@@ -9,7 +9,7 @@ const projects = [
         title: "Trancista Mariana",
         description:
             "Especialista em tranças nagô e box braids, com mais de 5 anos de experiência. Transformando cabelos em arte.",
-        image: "/assets/images/portfolio/trancista.png",
+        image: "/assets/images/portfolio/trancista.webp",
         technologies: ["React", "Next", "Typescript"],
         link: "https://trancistacampinas-mariana.com.br",
     },
@@ -17,7 +17,7 @@ const projects = [
         title: "vox2Text API",
         description:
             "Transforme áudio em texto com uma API extremamente rápida e de fácil configuração.",
-        image: "/assets/images/portfolio/vox2text-api.png",
+        image: "/assets/images/portfolio/vox2text-api.webp",
         technologies: ["Node", "Javascript", "Openai"],
         link: "https://github.com/Ronald785/vox2text-api",
     },
@@ -25,27 +25,28 @@ const projects = [
         title: "CetSales",
         description:
             "Uma empresa de consultoria e treinamento focada em estratégias de vendas para impulsionar os lucros.",
-        image: "/assets/images/portfolio/cet-sales.png",
+        image: "/assets/images/portfolio/cet-sales.webp",
         technologies: ["HTML", "Javascript", "Bootstrap"],
+        link: "https://ronald785.github.io/cet-sales",
     },
     {
         title: "Kindmap",
         description:
             "Ajudando a encontrar o centro de doação mais próximo em um país com 8,7 milhões de passando fome.",
-        image: "/assets/images/portfolio/kindmap.png",
+        image: "/assets/images/portfolio/kindmap.webp",
         technologies: ["React", "Next", "OpenLayers"],
     },
     {
         title: "Next Tech Blog",
         description:
             "Meu blog pessoal com dicas de código, novidades em tecnologia, automações e inovações em IA..",
-        image: "/assets/images/portfolio/next-tech-blog.png",
+        image: "/assets/images/portfolio/next-tech-blog.webp",
         technologies: ["React", "Next"],
     },
     {
         title: "Landing page",
         description: "Uma página  web para converter visitantes em cliente",
-        image: "/assets/images/portfolio/landing-page.png",
+        image: "/assets/images/portfolio/landing-page.webp",
         technologies: ["HTML", "CSS"],
         link: "https://ronald785-landingpage.netlify.app",
     },
