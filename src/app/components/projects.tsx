@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
+import { GoArrowRight } from "react-icons/go";
 
 const projects = [
     {
@@ -30,6 +31,13 @@ const projects = [
         link: "https://ronald785.github.io/cet-sales",
     },
     {
+        title: "Landing page",
+        description: "Uma página web para converter visitantes em clientes.",
+        image: "/assets/images/portfolio/landing-page.webp",
+        technologies: ["HTML", "CSS"],
+        link: "https://ronald785-landingpage.netlify.app",
+    },
+    {
         title: "Kindmap",
         description:
             "Ajudando a encontrar o centro de doação mais próximo em um país com 8,7 milhões de passando fome.",
@@ -42,13 +50,6 @@ const projects = [
             "Meu blog pessoal com dicas de código, novidades em tecnologia, automações e inovações em IA..",
         image: "/assets/images/portfolio/next-tech-blog.webp",
         technologies: ["React", "Next"],
-    },
-    {
-        title: "Landing page",
-        description: "Uma página  web para converter visitantes em cliente",
-        image: "/assets/images/portfolio/landing-page.webp",
-        technologies: ["HTML", "CSS"],
-        link: "https://ronald785-landingpage.netlify.app",
     },
 ];
 
@@ -107,29 +108,46 @@ export default function Projects() {
                         key={index}
                         className="rounded-lg border-2 border-accent overflow-hidden"
                     >
-                        <div className="relative h-36 w-full">
+                        <div className="relative h-36 w-full group">
                             {project.link ? (
                                 <Link href={project.link} target="_blank">
                                     <Image
                                         fill={true}
                                         src={project.image}
-                                        alt={`Image ${project.title} Webpage`}
+                                        alt={`Imagem ${project.title}`}
                                         className="object-cover"
                                     />
+                                    <div className="absolute inset-0 backdrop-blur-xl bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                        <span className="text-white font-bold text-sm">
+                                            Ir para o projeto
+                                        </span>
+                                    </div>
                                 </Link>
                             ) : (
                                 <Image
                                     fill={true}
                                     src={project.image}
-                                    alt={`Image ${project.title} Webpage`}
+                                    alt={`Imagem ${project.title}`}
                                     className="object-cover"
                                 />
                             )}
                         </div>
                         <div className="pr-4 pl-4 pt-4 pb-4">
-                            <h4 className="font-bold text-lg">
-                                {project.title}
-                            </h4>
+                            <div className="flex gap-2 items-center">
+                                <h4 className="font-bold text-lg">
+                                    {project.title}
+                                </h4>
+                                {project.link && (
+                                    <Link
+                                        href={project.link}
+                                        target="_blank"
+                                        className="flex items-center gap-1 text-xs text-chart-4 cursor-pointer hover:brightness-125 transition-all"
+                                    >
+                                        <p>Ver projeto</p>
+                                        <GoArrowRight size={15} />
+                                    </Link>
+                                )}
+                            </div>
                             <p className="mt-2">{project.description}</p>
                             <div className="flex flex-wrap gap-2 items-center mt-2">
                                 {project.technologies.map((tech, techIndex) => (

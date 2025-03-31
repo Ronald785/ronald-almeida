@@ -66,7 +66,7 @@ export default function Contact() {
                                 target="_blank"
                                 aria-label="Enviar email para ronaldmateus785@gmail.com"
                             >
-                                <div className="flex items-center gap-4 border border-chart-4 p-2 pl-4 rounded-lg">
+                                <div className="flex items-center gap-4 border border-chart-4 p-2 pl-4 rounded-lg hover:brightness-125">
                                     <MdOutlineEmail
                                         size={25}
                                         aria-hidden="true"
@@ -83,7 +83,7 @@ export default function Contact() {
                                 target="_blank"
                                 aria-label="Perfil no LinkedIn de Ronald Almeida"
                             >
-                                <div className="flex items-center gap-4 border border-chart-4 p-2 pl-4 rounded-lg">
+                                <div className="flex items-center gap-4 border border-chart-4 p-2 pl-4 rounded-lg hover:brightness-125">
                                     <FaLinkedinIn
                                         size={25}
                                         aria-hidden="true"
@@ -100,7 +100,7 @@ export default function Contact() {
                                 target="_blank"
                                 aria-label="Perfil no GitHub de Ronald Almeida"
                             >
-                                <div className="flex items-center gap-4 border border-chart-4 p-2 pl-4 rounded-lg">
+                                <div className="flex items-center gap-4 border border-chart-4 p-2 pl-4 rounded-lg hover:brightness-125">
                                     <FiGithub size={25} aria-hidden="true" />
                                     <div className="h-8 w-0.5 rounded-lg bg-chart-4"></div>
                                     <div>
@@ -110,7 +110,7 @@ export default function Contact() {
                                 </div>
                             </Link>
 
-                            <div className="flex items-center gap-4 border border-chart-4 p-2 pl-4 rounded-lg">
+                            <div className="flex items-center gap-4 border border-chart-4 p-2 pl-4 rounded-lg hover:brightness-125">
                                 <MdLocationOn size={25} aria-hidden="true" />
                                 <div className="h-8 w-0.5 rounded-lg bg-chart-4"></div>
                                 <div>
