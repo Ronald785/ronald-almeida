@@ -22,7 +22,7 @@ export default function Home() {
                 </p>
                 <div className="mt-4 flex gap-3">
                     <Link
-                        href={"/assets/archives/cv_ronald_almeida.pdf"}
+                        href={"/assets/archives/ronald_almeida_resume_en.pdf"}
                         target="_blank"
                         aria-label="Baixar currículo de Ronald Almeida (PDF)"
                     >
